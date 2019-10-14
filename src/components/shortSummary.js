@@ -1,12 +1,14 @@
 import React from 'react';
+import Person from './Person';
+
 class shortSummary extends React.Component{
     render(){
-        //const {title} = this.props;
         const {data} = this.props;
-        console.log(this.props);
-        console.log(data.title);
         return(
-            <div>{data.title}</div>
+            <React.Fragment>
+                <h2>{data.title}</h2>
+                <Person data={data.Person} />
+            </React.Fragment>
         );
     }
 }
