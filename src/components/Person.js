@@ -4,7 +4,6 @@ import React, {Component} from 'react';
 class Person extends Component {
     render() {
         const {data} = this.props;
-        console.log('ferbta');
         return (
             <React.Fragment>
                 <p>{data.fullName}</p>
