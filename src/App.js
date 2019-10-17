@@ -10,7 +10,12 @@ class App extends React.Component {
     render() {
         return (
             <React.Fragment>
+                <LibComponent.EventClickFocusInput />
+                --------------------
+                <LibComponent.Clock />
+                ---------------------
                 <LibComponent.summary summaries={Mock} />
+                
             </React.Fragment>
         )
     }
